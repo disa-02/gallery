@@ -1,0 +1,21 @@
+.footerContainer{
+    color: white;
+    display: flex;
+    gap : 30em;
+    justify-content: center;
+    background-color: black;
+}
+
+.footerContainer  h1 {
+    color: grey;
+}
+
+.icons {
+    display: flex;
+    gap: 1.2em;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}

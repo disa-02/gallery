@@ -1,0 +1,9 @@
+.navBar {
+    position: fixed;
+    z-index: 100;
+}
+
+.carrousel{
+    padding-top: 104px;
+    position: inherit;
+}
