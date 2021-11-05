@@ -1,5 +1,5 @@
 import React from 'react'
-import { Gallery } from '../Components/gallery/Gallery'
+import { Gallery } from '../Components/gallery/Gallery2'
 import NavBarO from '../Components/navBar/NavBar'
 import Styles from './Portafolio.module.css'
 import {Footer} from '../Components/footer/Footer'
