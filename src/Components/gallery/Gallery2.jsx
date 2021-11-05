@@ -47,11 +47,12 @@ export const Gallery = (props) => {
 
         const [model,setModel] = useState(false);
         const [tempImgSrc,setTempImgSrc] = useState('');
-        const getImage = (img) => {
-            setTempImgSrc(img);
+        const getImage = (imageSource) => {
+            setTempImgSrc(imageSource)
             setModel(true);
     
        }
+  
 
 
        
@@ -65,8 +66,10 @@ export const Gallery = (props) => {
         <div className = {Styles.galleryContainer}>
             <div className = {Styles.imagess}>
                 {data.map((d) => {
-                    return  <div className={Styles.pics}>
-                        <img className = {Styles.image} src={window.location.origin + "/Images/" + imagesPath + "/" + d.name} alt="no carga"/>
+                    let imageSource = "/gallery/Images/" + imagesPath + "/" + d.name
+                    console.log(imageSource)
+                    return  <div className={Styles.pics} onClick = { () => getImage(imageSource)}>
+                        <img className = {Styles.image} src={imageSource} alt="no carga"/>
                     </div>
                 })}
 

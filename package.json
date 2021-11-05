@@ -2,6 +2,7 @@
   "name": "gallery",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://disa-02.github.io/gallery",
   "dependencies": {
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
@@ -10,7 +11,6 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
-    "homepage": "https://disa-02.github.io/gallery2",
     "infinite-react-carousel": "^1.2.11",
     "material-ui-icons": "^1.0.0-beta.36",
     "react": "^17.0.2",
