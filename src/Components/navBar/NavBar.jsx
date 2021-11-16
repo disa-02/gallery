@@ -11,7 +11,7 @@ const NavBar = () => {
 
     return (
         <div className={ Style.navBar_container}>
-            <img src={logo}/>
+            <img className={Style.image} src={logo}/>
             <h1 className={Style.title}>Matias Feliz Fotografia</h1>
             <div className={ Style.nav}>
                 <Link to="/" className={Style.menuItem}> Inicio </Link>
