@@ -3,7 +3,7 @@
     display: flex;
     top: 0;
     width: 100%;
-    height: 11vh;
+    height: 11%;
     background-color: black;
     z-index: 1;
     justify-content: space-between;
@@ -11,41 +11,56 @@
     position: fixed;
 }
 .image{
-    padding-left: 2em;
+    height: 100%;
+    padding-left: 1.8%;
 }
 .title{
+    height: 100%;
     color: white;
-    font-size: 40px;
+    font-size: 225%;
     text-align: center;
     justify-content: center;
 }
 
 .nav {
+    width: 20%;
+    height: 100%;
     display:flex;
-    gap:30px;    
-    padding: 20px 40px;
+    gap:10%;    
+    padding: 1.25em 2.5em;
 }
 .navOthers {
     display:flex;
-    gap:20px;    
-    padding: 20px 15px;
+    gap:1.25em;    
+    padding: 1.25em 0.9375em;
 }
 
 
 
 .menuItem {
     text-decoration: none;
-    font-size: 15px;
+    font-size: 0.9375em;
     color: white;
-    border-radius: 3px;
-    padding-top: 20px;
+    border-radius: 0.1875em;
+    padding-top: 1.24em;
     text-align: center;
+    justify-content: center ;
+}
+.link{
+    text-decoration: none;
+    font-size: 0.9375em;
+    color: white;
+    border-radius: 0.1875em;
+    padding-top: 1.24em;
+    text-align: center;
+    justify-content: center ;
+
 }
 .menuItemOthers {
     text-decoration: none;
-    font-size: 15px;
+    font-size: 0.9375em;
     color: white;
-    border-radius: 3px;
+    border-radius: 0.1875em;
    }
 
 .menuItem:hover{
@@ -53,18 +68,50 @@
     transition: 0.5s;
 }
 .logo{
-    height: 80px;
-    width: 80px;
+    height: 100%;
+    width: 20%;
 
 }
-
-
-
-
-
+.btn{
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    padding: 5px;
+    color: black;
+    font-size: 18px;
+}
 
 
 .menuItemOthers:hover{
     background-color: rgba(119, 181, 200, 0.438);
     transition: 0.5s;
+}
+
+@media screen and (max-width: 500px) {
+    .navBar_container{
+        height: auto;
+    }
+    .nav{
+        flex-direction: column;
+        height: auto;
+    }
+    .title{
+        display: none;
+    }
+    .menuItem{
+        width: 100%;
+        border-top: 1px solid #000;
+        text-align: center;
+        margin-right: 0px;
+        padding: 20px 0px;
+
+    }
+    .image{
+        width: 30%;
+        height: 30%;
+    }
+    .btn{
+        display: block;
+    }
 }

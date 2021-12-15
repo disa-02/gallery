@@ -30,3 +30,39 @@
 .mediosContacto {
     padding-top: 100px;
 }
+@media (max-width: 1316px){
+    .contact{
+        gap: 10em;
+    }
+}
+
+@media (max-width: 1130px){
+    .contact{
+        gap: 5em;
+    }
+}
+@media (max-width: 1130px){
+    .form{
+        width: 40%;
+    }
+}
+
+@media (max-width: 832px){
+    .contact{
+        flex-direction: column;
+        padding-left: 2%;
+        gap: 0em;
+    }
+    .mediosContacto {
+        padding-top: 0px;
+    }
+    .form{
+        width: 60%;
+        padding-bottom: 0%;
+    }
+    .formAttribute > input{
+        padding-bottom: 0px;
+
+    }
+
+}

@@ -1,5 +1,5 @@
 .galleryContainer{
-    padding-top: 120px;
+    padding-top: 7.5em;
     position: inherit;
     background-color: black;
     width: 100%;
@@ -19,23 +19,24 @@
     column-width: 100%;
     gap: auto;
     overflow: hidden;
-    padding: 55px 55px;
+    padding: 3.4375em 3.4375em;
 
 
 }
 .image {
-    border-radius: 5px;
-    width: 570px;
+    border-radius: 0.3125em;
+    width: 35.625em;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 0.625em;
     
 
 }
 
 @media (max-width: 1820px){
     .image{
-        width: 500px;
+        width: 31.25em;
     }
 
 }
@@ -43,14 +44,14 @@
 
 @media (max-width: 1610px){
     .image{
-        width: 450px;
+        width: 28.125em;
     }
 
 }
 
 @media (max-width: 1610px){
     .image{
-        width: 400px;
+        width: 25em;
     }
 
 }
@@ -60,12 +61,12 @@
         column-count: 2;
     }
     .image{
-        width: 570px;
+        width: 35.625em;
     }
 }
 @media (max-width: 1320px){
     .image{
-        width: 450px;
+        width: 28.125em;
     }
 }
 @media (max-width: 980px){
@@ -73,7 +74,7 @@
         column-count: 1;
     }
     .image{
-        width: 570px;
+        width: 35.625em;
     }
 }
 
@@ -88,19 +89,19 @@
 }
 @media (max-width: 450px){
     .image{
-        width: 300px;
+        width: 18.75em;
     }
     .imagess{
-        padding:20px ;
+        padding:1.25em ;
     }
 }
 
 @media (max-width: 320px){
     .image{
-        width: 300px;
+        width: 18.75em;
     }
     .imagess{
-        padding:10px ;
+        padding:0.625em ;
     }
 }
 
@@ -157,18 +158,18 @@
     display: block;
     line-height: 0;
     box-sizing: border-box;
-    padding: 20px 0 20px;
+    padding: 1.25em 0 1.25em;
     margin: 0 auto;
 
 }
 
 .open svg{
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 0.625em;
+    right: 0.625em;
     width: 2rem;
     height: 2rem;
-    padding: 5px;
+    padding: 0.3125em;
     background-color: black;
     color: white;
     cursor: pointer;

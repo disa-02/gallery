@@ -30,7 +30,7 @@ export const ContactMe = () => {
                             </div>
                             <div className={Styles.formAttribute}> 
                                 <label> Mensaje </label><br/>
-                                <textarea rows="10" cols="55" />
+                                <textarea rows="10" cols="40" />
                             </div>
                             <button>Enviar</button>
                         </form>
@@ -47,13 +47,18 @@ export const ContactMe = () => {
                     <Gmaps
                     width={'100%'}
                     height={'200px'}
-                    lat={coords.lat}
-                    lng={coords.lng}
-                    zoom={12}
+                    lat={-37.99954307008053}
+                    lng={-57.54726863394392}
+                    zoom={16}
                     loadingMessage={'Be happy'}
                     params={params}
                     googleMapUrl ="https://maps.googleapis.com/maps/api/js?v=3.exp$key=$AIzaSyATws37HqR7E9OEJCqajG--Qj0CynGiFkk"
                     >
+                    <Marker
+                    lat= {-37.99954307008053}
+                    lng={-57.54726863394392}
+                    draggable={true}
+                     />
    
               </Gmaps> 
                 </div>
