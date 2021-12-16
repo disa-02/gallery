@@ -22,7 +22,7 @@ export const Home = () => {
        
        
     return (
-        <div>
+        <div className={Style.container}>
             <div className={Style.navBar}>
                 <NavBarO />
             </div>

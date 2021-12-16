@@ -1,9 +1,14 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
 .navBar {
     position: fixed;
     z-index: 100;
 }
 
 .carrousel{
-    padding-top: 104px;
-    position: inherit;
+    padding-top: 5%;
+    position: relative;
 }

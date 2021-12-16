@@ -10,7 +10,7 @@ const Dropdown = () => {
   const  showMenuu=(event)=> {
     event.preventDefault();
     
-      setShowMenu(true);
+      setShowMenu(!showMenu);
   
   }
 
@@ -22,11 +22,11 @@ const Dropdown = () => {
         
         
 
-              <div className={Style.menu}>
+             {/*showMenu ||*/ <div className={Style.menu}>
                 <Link to="/portfolio/retrato" className={Style.menuItem}> Personas </Link>
                 <Link to="/portfolio/moda" className="aa"> Moda </Link>
                 <Link to="/portfolio/exterior" className="aa"> Exterior </Link>
-              </div>
+              </div>} 
   
         
       </div>

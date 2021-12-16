@@ -5,6 +5,7 @@ import Dropdown from "./Dropdown"
 import logo from "../../Images/logo.png"
 import { useState } from 'react'
 import { useEffect } from 'react'
+import menu from "../../Images/menu.png"
 
 const NavBar = () => {
     const location = useLocation();
@@ -31,6 +32,7 @@ const NavBar = () => {
 
     return (
         <nav className={ Style.navBar_container}>
+            
             <img className={Style.image} src={logo}/>
             <h1 className={Style.title}>Matias Feliz Fotografia</h1>
             {(toggleMenu || screenWidth > 500) &&  <ul className={ Style.nav}>
@@ -40,7 +42,7 @@ const NavBar = () => {
                 <li className={Style.menuItem}><Link to="/contactMe" className={Style.link}> Contacto </Link></li>
             </ul>}
            
-            <button onClick={toggleNav} className={Style.btn}>BTN</button>
+            <button onClick={toggleNav} className={Style.btn}><img className={Style.menuLogo} src={menu} /></button>
         </nav>
     )
 }
