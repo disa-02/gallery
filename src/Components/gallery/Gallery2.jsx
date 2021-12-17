@@ -49,7 +49,8 @@ export const Gallery = (props) => {
         const [tempImgSrc,setTempImgSrc] = useState('');
         const getImage = (imageSource) => {
             setTempImgSrc(imageSource)
-            setModel(true);
+            if (window.innerWidth > 980)
+                setModel(true);
     
        }
   

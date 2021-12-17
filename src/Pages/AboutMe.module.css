@@ -22,3 +22,8 @@
     height: 10vh;
 }
 
+@media screen and (max-width: 700px) {
+    .aboutMe{
+        padding-top: 20px;
+    }
+}

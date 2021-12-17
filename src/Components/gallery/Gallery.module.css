@@ -48,13 +48,15 @@
   
 }
 
-
-.image:hover{
-    transform: scale(1.1);
-    z-index: -1;
-    cursor: zoom-in;
-    overflow: hidden;
+@media screen and (min-width: 980px) {
+    .image:hover{
+        transform: scale(1.1);
+        z-index: -1;
+        cursor: zoom-in;
+        overflow: hidden;
+    }
 }
+
 
 .model{
     width: 100%;
@@ -116,4 +118,10 @@
     background-color: black;
     color: white;
     cursor: pointer;
+}
+
+@media screen and (max-width:500px) {
+    .open img{
+        display: none;
+    }
 }
