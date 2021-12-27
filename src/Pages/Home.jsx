@@ -9,6 +9,7 @@ import image3 from '../Images/Home/3.jpg'
 
 
 export const Home = () => {
+    window.scrollTo(0, 0)
     function importAll(r) {
         let images = {};
          r.keys().forEach((item, index) => { images[item.replace('./', '')] = r(item); });

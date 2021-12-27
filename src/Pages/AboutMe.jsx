@@ -5,6 +5,7 @@ import NavBarO from '../Components/navBar/NavBar'
 import Styles from "./AboutMe.module.css"
 
 export const AboutMe = () => {
+    window.scrollTo(0, 0)
 
     return (
         <div className={Styles.aboutMe_container}>

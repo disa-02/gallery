@@ -5,6 +5,7 @@ import Styles from './Portafolio.module.css'
 import {Footer} from '../Components/footer/Footer'
 
 function Portafolio(props) {    
+    window.scrollTo(0, 0)
     return (
         <div className={Styles.portafolioContainer} >
             <NavBar />  

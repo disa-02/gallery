@@ -40,6 +40,12 @@
   
 }
 
+.menuItem:hover{
+  background-color: rgba(119, 181, 200, 0.438);
+    transition: 0.5s;
+
+}
+
 .dropdownContainer:hover .menu{
   display: block;
 }

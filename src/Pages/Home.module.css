@@ -6,9 +6,13 @@
 .navBar {
     position: fixed;
     z-index: 100;
+    height: 11vh;
 }
 
 .carrousel{
-    padding-top: 5%;
+    padding-top: 11vh;
+   
+    padding-bottom: 0;
     position: relative;
+    margin: 0;
 }

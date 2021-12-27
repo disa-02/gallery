@@ -9,7 +9,7 @@ function Carousel({images}) {
         <div className={Styles.slider}>
             <Slider className={Styles.slider_content}>{
                 images.map((im) => <div className={Styles.slider_content_item} >
-                                            <img className = {Styles.image} src={im} alt="no carga"/>
+                                            <img className = {Styles.image} src={im} alt="Error al cargar la imagen"/>
                                         </div>
                 )}
             </Slider>

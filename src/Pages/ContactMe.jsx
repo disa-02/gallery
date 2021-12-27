@@ -7,6 +7,7 @@ import map from '../Images/map.png';
 import emailjs from 'emailjs-com'
 
 export const ContactMe = () => {
+    window.scrollTo(0, 0)
 
     const coords = {
         lat: 51.5258541,

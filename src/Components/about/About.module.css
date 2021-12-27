@@ -2,6 +2,7 @@
     display: flex;
     gap : 5em;
     padding: 90px 50px;
+    height: 59vh;
 }
 
 .img {
