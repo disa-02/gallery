@@ -2,6 +2,7 @@ import  Styles  from './Footer.module.css'
 import instagramIcon from '../../Images/Icons/instagram.png'
 import facebookIcon from '../../Images/Icons/facebook.png'
 import tiktokIcon from '../../Images/Icons/tiktok.png'
+import whatsappIcon from '../../Images/Icons/whatsapp.png'
 
 
 
@@ -21,6 +22,7 @@ export const Footer = () => {
                         <a  href = "https://www.instagram.com/matiasfeliz.fotografia/" target = "_blank"> <img className = {Styles.icon} src = {instagramIcon}/></a>
                         <a  href = "https://www.facebook.com/matiasfeliz.fotografia/" target = "_blank"> <img className = {Styles.icon} src = {facebookIcon}/></a>
                         <a  href = "https://www.tiktok.com/@matiasfeliz.fotografia?" target = "_blank"> <img className = {Styles.icon} src = {tiktokIcon}/></a>
+                        <a  href = "https://api.whatsapp.com/send?phone=+5492235936659&text=nuestromensaje" target = "_blank"> <img className = {Styles.icon} src = {whatsappIcon} /> </a>
                     </div>
                     
                 </div>

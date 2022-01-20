@@ -7,6 +7,7 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 import menu from "../../Images/menu.png"
 
+
 const NavBar = () => {
     const location = useLocation();
     const {pathname} = location;

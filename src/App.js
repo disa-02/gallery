@@ -16,14 +16,17 @@ function App() {
         <Route exact path='/aboutMe'>
           <AboutMe />
         </Route>
-        <Route exact path='/portfolio/retrato'>
-          <Portafolio name="Retrato"/>
+        <Route exact path='/portfolio/retratos'>
+          <Portafolio name="Retratos"/>
         </Route>
-        <Route exact path='/portfolio/moda'>
-          <Portafolio name="Moda"/>
+        <Route exact path='/portfolio/marcas'>
+          <Portafolio name="Marcas"/>
         </Route>
-        <Route exact path='/portfolio/exterior'>
-          <Portafolio name="Exterior"/>
+        <Route exact path='/portfolio/exteriores'>
+          <Portafolio name="Exteriores"/>
+        </Route>
+        <Route exact path='/portfolio/estudio'>
+          <Portafolio name="Estudio"/>
         </Route>
         <Route exact path='/contactMe'>
           <ContactMe />

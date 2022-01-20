@@ -16,7 +16,6 @@ export const ContactMe = () => {
       const params = {v: '3.exp', key: 'AIzaSyATws37HqR7E9OEJCqajG--Qj0CynGiFkk'};
 
       const sendEmail = (e) =>{
-          e.preventDefault();
           emailjs.sendForm('service_05499wp','template_1eau1gk',e.target,'user_6HfKLrrEcZm7tvNyGe4Mh')
       }
 
@@ -32,7 +31,7 @@ export const ContactMe = () => {
                             </div>
                             <div className={Styles.formAttribute}> 
                                 <label> Mail </label><br/>
-                                <input name = 'mail' size="55"/>
+                                <input type = 'mail' name = 'mail' size="55"/>
                             </div>
                             <div className={Styles.formAttribute}> 
                                 <label> Mensaje </label><br/>

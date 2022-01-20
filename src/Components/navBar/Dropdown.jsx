@@ -23,9 +23,11 @@ const Dropdown = () => {
         
 
              {/*showMenu ||*/ <div className={Style.menu}>
-                <Link to="/portfolio/retrato" className={Style.menuItem}> Personas </Link>
-                <Link to="/portfolio/moda" className={Style.menuItem}> Moda </Link>
-                <Link to="/portfolio/exterior" className={Style.menuItem}> Exterior </Link>
+                <Link to="/portfolio/retratos" className={Style.menuItem}> Retratos </Link>
+                <Link to="/portfolio/estudio" className={Style.menuItem}> Estudio </Link>
+                <Link to="/portfolio/exteriores" className={Style.menuItem}> Exteriores </Link>
+                <Link to="/portfolio/marcas" className={Style.menuItem}> Marcas </Link>
+
               </div>} 
   
         

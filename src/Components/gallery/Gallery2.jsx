@@ -2,9 +2,11 @@ import React from 'react'
 import Styles from './Gallery.module.css'
 import { useEffect, useState } from 'react';
 import CloseIcon from '@material-ui/icons/Close';
-import dataExterior from '../../Images/Exterior/exterior.json'
-import dataModa from '../../Images/Moda/moda.json'
-import dataRetrato from '../../Images/Retrato/retrato.json'
+import dataExteriores from '../../Images/Exteriores/exteriores.json'
+import dataMarcas from '../../Images/Marcas/marcas.json'
+import dataRetratos from '../../Images/Retratos/retratos.json'
+import dataEstudio from '../../Images/Estudio/estudio.json'
+
 
 
 
@@ -13,33 +15,31 @@ export const Gallery = (props) => {
 
        let imagesPath
        let data
-       if (props.name === "Retrato"){
-        console.log("retrato");
-        imagesPath = "Retrato"
-        data = dataRetrato
+       if (props.name === "Retratos"){
+        imagesPath = "Retratos"
+        data = dataRetratos
 
 
        }
-       if (props.name === "Moda"){
-        console.log("Moda")
-        imagesPath = "Moda"
-        data = dataModa
+       if (props.name === "Marcas"){
+        imagesPath = "Marcas"
+        data = dataMarcas
 
 
        }
-       if (props.name === "Exterior"){
-        console.log("Exterior")
-        imagesPath = "Exterior"
-        data = dataExterior
+       if (props.name === "Exteriores"){
+        imagesPath = "Exteriores"
+        data = dataExteriores
+
+       }
+
+       if (props.name === "Estudio"){
+        imagesPath = "Estudio"
+        data = dataEstudio
 
        }
 
 
-
-       data.map((d) => {
-        console.log(d.name)
-
-       })
 
 
 
@@ -68,7 +68,6 @@ export const Gallery = (props) => {
             <div className = {Styles.imagess}>
                 {data.map((d) => {
                     let imageSource = "/gallery/Images/" + imagesPath + "/" + d.name
-                    console.log(imageSource)
                     return  <div className={Styles.pics} onClick = { () => getImage(imageSource)}>
                         <img className = {Styles.image} src={imageSource} alt="no carga"/>
                     </div>
